@@ -22,7 +22,9 @@ let package = Package(
     dependencies: [
         // Our code is designed to float ontop of the version so we specify a wide range and let the user set exactly in the project
         .package(url: "https://github.com/modelcontextprotocol/swift-sdk.git", "0.9.0" ..< "2.0.0"),
-        .package(url: "https://github.com/ptliddle/swifty-json-schema.git", "0.2.0" ..< "0.5.0"),
+//        .package(path: "../../../Libraries/mcp-swift-sdk"),
+        .package(url: "https://github.com/ptliddle/swifty-json-schema.git", branch: "develop"), // "0.2.0" ..< "0.5.0"),
+//        .package(path: "../swifty-json-schema")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
