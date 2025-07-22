@@ -19,7 +19,7 @@ public extension JSONSchema {
         return JSONDecoder()
     }
     
-    public init(fromValue value: Value) throws {
+    init(fromValue value: SwiftyJsonSchema.Value) throws {
         let encodedJSON = try Self.encoder.encode(value)
         self = try Self.decoder.decode(JSONSchema.self, from: encodedJSON)
     }
