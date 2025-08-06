@@ -27,7 +27,7 @@ let package = Package(
         .package(url: "https://github.com/glaciotech/mcp-swift-sdk.git", branch: "instruction-support"),
 
 //        .package(path: "../../../Libraries/mcp-swift-sdk"),
-        .package(url: "https://github.com/ptliddle/swifty-json-schema.git", branch: "develop"), // "0.2.0" ..< "0.5.0"),
+        .package(url: "https://github.com/ptliddle/swifty-json-schema.git", from: "0.3.0" ..< "0.5.0"),
 //        .package(path: "../swifty-json-schema")
     ],
     targets: [
