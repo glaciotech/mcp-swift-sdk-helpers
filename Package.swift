@@ -23,8 +23,8 @@ let package = Package(
         // Our code is designed to float on top of the official mcp library. As such we specify a wide range and let the user set exactly in the project
 //        .package(url: "https://github.com/modelcontextprotocol/swift-sdk.git", "0.9.0" ..< "2.0.0"),
 
-        // 6th Aug 2025 - The official version currently doesn't support instructions so we have to use our branch which pipes this through, move to official when supported
-        .package(url: "https://github.com/glaciotech/mcp-swift-sdk.git", branch: "instruction-support"),
+        // 6th Aug 2025 - The official version currently doesn't support instructions so we have to use our special version 0.9.1, delete this and the tag when supported
+        .package(url: "https://github.com/glaciotech/mcp-swift-sdk.git", exact: "0.9.1"),
 
 //        .package(path: "../../../Libraries/mcp-swift-sdk"),
         .package(url: "https://github.com/ptliddle/swifty-json-schema.git", "0.3.0" ..< "0.5.0"),
