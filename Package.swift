@@ -20,9 +20,15 @@ let package = Package(
             targets: ["MCPHelpers"]),
     ],
     dependencies: [
-        // Our code is designed to float ontop of the version so we specify a wide range and let the user set exactly in the project
-        .package(url: "https://github.com/modelcontextprotocol/swift-sdk.git", "0.9.0" ..< "2.0.0"),
-        .package(url: "https://github.com/ptliddle/swifty-json-schema.git", "0.2.0" ..< "0.5.0"),
+        // Our code is designed to float on top of the official mcp library. As such we specify a wide range and let the user set exactly in the project
+//        .package(url: "https://github.com/modelcontextprotocol/swift-sdk.git", "0.9.0" ..< "2.0.0"),
+
+        // 6th Aug 2025 - The official version currently doesn't support instructions so we have to use our branch which pipes this through, move to official when supported
+        .package(url: "https://github.com/glaciotech/mcp-swift-sdk.git", branch: "instruction-support"),
+
+//        .package(path: "../../../Libraries/mcp-swift-sdk"),
+        .package(url: "https://github.com/ptliddle/swifty-json-schema.git", from: "0.3.0" ..< "0.5.0"),
+//        .package(path: "../swifty-json-schema")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -30,7 +36,9 @@ let package = Package(
         .target(
             name: "MCPHelpers",
             dependencies: [
-                .product(name: "MCP", package: "swift-sdk"),
+                // Uncomment below for the official version
+                // .product(name: "MCP", package: "swift-sdk"),
+                .product(name: "MCP", package: "mcp-swift-sdk"),
                 .product(name: "SwiftyJsonSchema", package: "swifty-json-schema")
             ]
         ),
@@ -38,7 +46,9 @@ let package = Package(
             name: "MCPHelpersTests",
             dependencies: [
                 "MCPHelpers",
-                .product(name: "MCP", package: "swift-sdk"),
+                // Uncomment below for the official version
+                // .product(name: "MCP", package: "swift-sdk"),
+                .product(name: "MCP", package: "mcp-swift-sdk"),
                 .product(name: "SwiftyJsonSchema", package: "swifty-json-schema")
             ]
         ),
