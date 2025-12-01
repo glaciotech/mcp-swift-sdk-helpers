@@ -23,4 +23,9 @@ public extension JSONSchema {
         let encodedJSON = try Self.encoder.encode(value)
         self = try Self.decoder.decode(JSONSchema.self, from: encodedJSON)
     }
+    
+    init(fromMCPValue mcpValue: MCP.Value) throws {
+        let encodedJSON = try Self.encoder.encode(mcpValue)
+        self = try Self.decoder.decode(JSONSchema.self, from: encodedJSON)
+    }
 }
