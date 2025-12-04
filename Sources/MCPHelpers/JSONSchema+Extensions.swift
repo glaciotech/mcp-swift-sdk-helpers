@@ -19,12 +19,12 @@ public extension JSONSchema {
         return JSONDecoder()
     }
     
-    init(fromValue value: SwiftyJsonSchema.Value) throws {
+    public init(fromValue value: SwiftyJsonSchema.Value) throws {
         let encodedJSON = try Self.encoder.encode(value)
         self = try Self.decoder.decode(JSONSchema.self, from: encodedJSON)
     }
     
-    init(fromMCPValue mcpValue: MCP.Value) throws {
+    public init(fromMCPValue mcpValue: MCP.Value) throws {
         let encodedJSON = try Self.encoder.encode(mcpValue)
         self = try Self.decoder.decode(JSONSchema.self, from: encodedJSON)
     }

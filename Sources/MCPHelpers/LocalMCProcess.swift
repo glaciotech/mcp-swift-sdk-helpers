@@ -121,8 +121,7 @@ public class LocalMCProcess {
             process.environment = environment
         }
         
-//        #error("Consolidate this and LocalMCPProcess in Eridani, VentusAICore")
-//        #error("This should be configurable to add multiple path elements for things like node, python etc")
+        #warning("This should be configurable to add multiple path elements for things like node, python etc")
         if let path = process.environment?["PATH"], !self.additionalPaths.isEmpty {
             let additionalPathFragment = self.additionalPaths.joined(separator: ":")
             process.environment?["PATH"] = "\(path):\(additionalPathFragment)" // Add additional bin directores. Should be able to set this
