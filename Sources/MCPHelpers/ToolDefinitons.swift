@@ -19,6 +19,8 @@ public protocol ToolDefinitonProtocol {
     static var name: String { get }
     static var description: String { get }
     
+    static var annotations: Tool.Annotations { get }
+    
     static func definition() throws -> Tool
 }
 
@@ -35,6 +37,12 @@ public protocol AsyncToolDefiniton: ToolDefinitonProtocol {
 }
 
 extension ToolDefinitonProtocol {
+    
+    /// As a default return the most restrictive hints
+    public static var annotations: Tool.Annotations {
+        return Tool.Annotations(readOnlyHint: false, destructiveHint: true, idempotentHint: false, openWorldHint: true)
+    }
+    
     public static func definition() throws -> Tool {
         let schema = try MCP.Value.produced(from: Schema.self)
         
@@ -47,6 +55,6 @@ extension ToolDefinitonProtocol {
             }
         }()
         
-        return Tool(name: self.name, description: self.description, inputSchema: schema, meta: meta)
+        return Tool(name: self.name, description: self.description, inputSchema: schema, _meta: meta?.mcpSdkFormat)
     }
 }
