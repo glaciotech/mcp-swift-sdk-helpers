@@ -1,0 +1,78 @@
+{
+  "originHash" : "4a188c0ca6132f7ff2d36b483057787d266ecd063cb9c972f5284166c8cb54c3",
+  "pins" : [
+    {
+      "identity" : "eventsource",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mattt/eventsource.git",
+      "state" : {
+        "revision" : "ca2a9d90cbe49e09b92f4b6ebd922c03ebea51d0",
+        "version" : "1.3.0"
+      }
+    },
+    {
+      "identity" : "swift-async-algorithms",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-async-algorithms.git",
+      "state" : {
+        "revision" : "6c050d5ef8e1aa6342528460db614e9770d7f804",
+        "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections.git",
+      "state" : {
+        "revision" : "7b847a3b7008b2dc2f47ca3110d8c782fb2e5c7e",
+        "version" : "1.3.0"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log.git",
+      "state" : {
+        "revision" : "ce592ae52f982c847a4efc0dd881cc9eb32d29f2",
+        "version" : "1.6.4"
+      }
+    },
+    {
+      "identity" : "swift-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/modelcontextprotocol/swift-sdk.git",
+      "state" : {
+        "revision" : "c0407a0b52677cb395d824cac2879b963075ba8c",
+        "version" : "0.10.2"
+      }
+    },
+    {
+      "identity" : "swift-service-lifecycle",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swift-server/swift-service-lifecycle.git",
+      "state" : {
+        "revision" : "1de37290c0ab3c5a96028e0f02911b672fd42348",
+        "version" : "2.9.1"
+      }
+    },
+    {
+      "identity" : "swift-system",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-system.git",
+      "state" : {
+        "revision" : "7c6ad0fc39d0763e0b699210e4124afd5041c5df",
+        "version" : "1.6.4"
+      }
+    },
+    {
+      "identity" : "swifty-json-schema",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ptliddle/swifty-json-schema.git",
+      "state" : {
+        "revision" : "a011b891270d9323f0184fa6a97af217d14e3a9b",
+        "version" : "0.4.0"
+      }
+    }
+  ],
+  "version" : 3
+}
