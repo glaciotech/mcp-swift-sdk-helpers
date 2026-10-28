@@ -55,6 +55,6 @@ extension ToolDefinitonProtocol {
             }
         }()
         
-        return Tool(name: self.name, description: self.description, inputSchema: schema, _meta: meta?.mcpSdkFormat)
+        return Tool(name: self.name, description: self.description, inputSchema: schema, annotations: annotations, _meta: meta?.mcpSdkFormat)
     }
 }

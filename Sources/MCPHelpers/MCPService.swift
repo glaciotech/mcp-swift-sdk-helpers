@@ -21,9 +21,6 @@ public struct MCPService: Service {
     public func run() async throws {
         // Start the server
         try await server.start(transport: transport)
-
-        // Keep running until external cancellation
-        try await Task.sleep(for: .seconds(10000)) 
     }
 
     public func shutdown() async throws {
