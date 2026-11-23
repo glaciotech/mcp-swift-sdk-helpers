@@ -24,9 +24,9 @@ let package = Package(
         // Our code is designed to float on top of the official mcp library. As such we specify a wide range and let the user set exactly in the project
 //        .package(url: "https://github.com/modelcontextprotocol/swift-sdk.git", "0.10.0" ..< "2.0.0"),
         .package(url: "https://github.com/glaciotech/mcp-swift-sdk.git", branch: "feature/statefulhttp-compatibilty-enhancement"),
-        .package(url: "https://github.com/ptliddle/swifty-json-schema.git", from: "0.5.1"),
+        .package(url: "https://github.com/ptliddle/swifty-json-schema.git", from: "0.5.2"),
+//         .package(path: "../swifty-json-schema"),
         .package(url: "https://github.com/swift-server/swift-service-lifecycle.git", from: "2.8.0")
-
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.

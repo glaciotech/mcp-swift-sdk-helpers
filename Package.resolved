@@ -1,5 +1,5 @@
 {
-  "originHash" : "4a188c0ca6132f7ff2d36b483057787d266ecd063cb9c972f5284166c8cb54c3",
+  "originHash" : "b89201d77ed1d245b879be9f7366dd3336943afa2ba9ac16a6a2eb384ffa2de1",
   "pins" : [
     {
       "identity" : "eventsource",
@@ -11,12 +11,30 @@
       }
     },
     {
+      "identity" : "mcp-swift-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/glaciotech/mcp-swift-sdk.git",
+      "state" : {
+        "branch" : "feature/statefulhttp-compatibilty-enhancement",
+        "revision" : "59e4b5a8da677f8899e8f3f1fab86e56cc6abc81"
+      }
+    },
+    {
       "identity" : "swift-async-algorithms",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-async-algorithms.git",
       "state" : {
         "revision" : "6c050d5ef8e1aa6342528460db614e9770d7f804",
         "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "swift-atomics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-atomics.git",
+      "state" : {
+        "revision" : "0442cb5a3f98ab802acb777929fdb446bda11a34",
+        "version" : "1.3.1"
       }
     },
     {
@@ -38,12 +56,12 @@
       }
     },
     {
-      "identity" : "swift-sdk",
+      "identity" : "swift-nio",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/modelcontextprotocol/swift-sdk.git",
+      "location" : "https://github.com/apple/swift-nio.git",
       "state" : {
-        "revision" : "c0407a0b52677cb395d824cac2879b963075ba8c",
-        "version" : "0.10.2"
+        "revision" : "6db9d9abd92ad7399b8a564cafbb87d3507245fa",
+        "version" : "2.104.0"
       }
     },
     {
@@ -69,8 +87,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ptliddle/swifty-json-schema.git",
       "state" : {
-        "revision" : "a011b891270d9323f0184fa6a97af217d14e3a9b",
-        "version" : "0.4.0"
+        "revision" : "5feef87a193bea9e24fbebb1ed2e7cab1aa79df4",
+        "version" : "0.5.2"
       }
     }
   ],
